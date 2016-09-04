@@ -15,20 +15,20 @@ public:
   void HandleRoot(void);
   void HandleNotFound(void);
   void HandleClient(void);
-  
+
   void HandleDigitalPut(void);
   void HandleDigitalGet(void);
   void HandleAnalogGet(void);
-  
+
 private:
   int PINT_STATES[];
   int PIN_ADDRESS[];
 
   int _port = 80;
-  
+
   const char* SSID = "ssid";
   const char* PASS = "password";
-  
+
   const int SENSOR = A0;
   ESP8266WebServer server;
 };
